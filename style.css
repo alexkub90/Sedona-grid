@@ -1,0 +1,185 @@
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: url("/fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.general {
+  background-color: #E5E5E5;
+  font-family: 'PT Sans';
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  color: #333333;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.page {
+  background-color: #FFFFFF;
+  display: grid;
+  grid-template-rows: 70px auto 120px;
+  width: 1200px;
+  min-height: 100vh;
+  margin: 0 auto;
+}
+
+.header {
+  outline: 1px dotted red;
+  margin: 0;
+  height: 66px;
+}
+
+.main {
+  outline: 1px dotted green;
+  display: grid;
+  grid-template-rows: 767px 1535px 417px 411px;
+}
+
+.navigation {
+  display: grid;
+  height: 66px;
+  grid-template-columns: 209px 360px auto;
+  margin: 0;
+}
+
+.logo-header {
+  grid-column: 1/2;
+  position: absolute;
+  padding-left: 70px;
+}
+
+.nav-list {
+  display: grid;
+  grid-column: 2/3;
+  list-style: none;
+  grid-template-columns: 68px 82px 93px;
+  height: 66px;
+  margin: 0;
+  margin-left: 47px;
+  align-items: center;
+  padding: 0;
+  column-gap: 34px;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-weight: 700;
+  color: #333333;
+}
+
+.nav-active::before {
+  position: absolute;
+  content: "";
+  top: 64px;
+  background-color: #756257;
+  height: 2px;
+  width: 68px;
+}
+
+.additional-list {
+  display: grid;
+  justify-content: end;
+  grid-template-columns: auto auto 160px;
+  list-style: none;
+  max-height: 66px;
+  margin: 0;
+  padding-right: 70px;
+}
+
+.menu-item {
+  display: grid;
+  justify-content: center;
+  min-width: 42px;
+  min-height: 42px;
+}
+
+.menu-item:nth-child(2) {
+  margin-right: 20px;
+}
+
+.additional-menu-btn {
+  min-width: 42px;
+  min-height: 42px;
+}
+
+.svg-search {
+  position: relative;
+  top: 22px;
+  left: 11px;
+}
+
+.svg-like {
+  position: relative;
+  top: 21px;
+  left: 11px;
+}
+
+.menu-btn {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome-section {
+  outline: auto;
+}
+
+.advantages-section {
+  outline: auto;
+}
+
+.search-section {
+  outline: auto;
+}
+
+.subscribe-section {
+  outline: auto;
+}
+
+.footer {
+  outline: 1px dotted blue;
+}
+
+.button {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.additional-btn {
+  align-self: flex-start;
+  background: #756257;
+  border-radius: 4px;
+  min-width: 160px;
+  max-height: 36px;
+  text-align: center;
+  text-decoration: none;
+  padding-top: 9px;
+  padding-bottom: 8px;
+  margin-top: 14px;
+}
