@@ -169,7 +169,35 @@
 }
 
 .advantages-section {
+  display: grid;
+  margin: 0 auto;
+  width: 1200px;
   outline: auto;
+}
+
+.info-container {
+  outline: auto;
+  margin: 0;
+  padding-top: 62px;
+  padding-bottom: 80px;
+  height: max-content;
+}
+
+.info-title {
+  line-height: 36px;
+  margin: 0 auto;
+  margin-bottom: 31px;
+  text-transform: uppercase;
+  text-align: center;
+  color: black;
+}
+
+.info-description {
+  margin: 0 auto;
+  font-family: inherit;
+  font-size: 22px;
+  line-height: 36px;
+  text-align: center;
 }
 
 .search-section {
