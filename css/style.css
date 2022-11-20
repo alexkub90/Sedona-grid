@@ -39,22 +39,20 @@
 .page {
   background-color: #FFFFFF;
   display: grid;
-  grid-template-rows: 70px auto 120px;
+  grid-template-rows: auto auto 120px;
   width: 1200px;
   min-height: 100vh;
   margin: 0 auto;
 }
 
 .header {
-  outline: 1px dotted red;
   margin: 0;
   height: 66px;
 }
 
 .main {
-  outline: 1px dotted green;
   display: grid;
-  grid-template-rows: 767px 1535px 417px 411px;
+  grid-template-rows: auto 1535px 417px 411px;
 }
 
 .navigation {
@@ -68,6 +66,7 @@
   grid-column: 1/2;
   position: absolute;
   padding-left: 70px;
+  z-index: 1;
 }
 
 .nav-list {
@@ -143,7 +142,30 @@
 }
 
 .welcome-section {
-  outline: auto;
+  position: relative;
+  background-image: url("/images/backgrounds/index-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 51px;
+}
+
+.welcome-section::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  background-image: url("/images/backgrounds/Vector.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 57px;
+  left: 0px;
+  right: 0px;
+}
+
+.welcome-image {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 82px;
 }
 
 .advantages-section {
