@@ -175,7 +175,7 @@
   grid-template-areas: "item-big img-big img-big"
     "item-home item-food item-souvenirs"
     "img-big-2 img-big-2 item-big-2"
-    "item-2 item-2 item-2";
+    "item-3 item-4 item-5";
   margin: 0 auto;
   width: 1200px;
 }
@@ -223,7 +223,7 @@
   line-height: 28px;
   text-align: center;
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 29px;
   text-transform: uppercase;
 }
 
@@ -261,6 +261,16 @@
   grid-area: item-home;
 }
 
+.item-food {
+  grid-area: item-food;
+  background: #FFFFFF;
+}
+
+.item-souvenirs {
+  grid-area: item-souvenirs;
+  padding-top: 85px;
+}
+
 .svg-home {
   margin: 0 auto;
   display: block;
@@ -273,18 +283,35 @@
   display: block;
 }
 
+.svg-souvenirs {
+  display: block;
+  margin: 0px 168px 24px 168px;
+}
+
 .item-small-title {
   margin-bottom: 19px;
   color: #000000;
 }
 
-.item-food {
-  grid-area: item-food;
-  background: #FFFFFF;
+.image-big-item-2 {
+  grid-area: img-big-2;
 }
 
-.item-souvenirs {
-  grid-area: item-souvenirs;
+.big-item-2 {
+  grid-area: item-big-2;
+}
+
+.item-3 {
+  grid-area: item-3;
+}
+
+.item-4 {
+  grid-area: item-4;
+  background: rgba(131, 179, 211, 0.2);
+}
+
+.item-5 {
+  grid-area: item-5;
 }
 
 .search-section {
