@@ -52,7 +52,7 @@
 
 .main {
   display: grid;
-  grid-template-rows: auto 1535px 417px 411px;
+  /* grid-template-rows: auto 1535px 417px 411px; */
 }
 
 .navigation {
@@ -170,7 +170,12 @@
 
 .advantages-section {
   display: grid;
-  grid-template-rows: 282px auto auto auto auto;
+  grid-template-rows: repeat(4, 384px);
+  grid-template-columns: repeat(4, 400px);
+  grid-template-areas: "item-big img-big img-big"
+    "item-home item-food item-souvenirs"
+    "img-big-2 img-big-2 item-big-2"
+    "item-2 item-2 item-2";
   margin: 0 auto;
   width: 1200px;
 }
@@ -202,14 +207,14 @@
 .advantages-item {
   display: grid;
   margin: 0 auto;
-  height: 384px;
-  width: 400px;
 }
 
 .item-container {
-  background: rgba(131, 179, 211, 0.12);
-  padding-top: 97px;
+  padding-top: 98px;
   padding-bottom: 87px;
+  margin: 0;
+  background: rgba(131, 179, 211, 0.12);
+  width: 400px;
 }
 
 .item-title {
@@ -218,8 +223,8 @@
   line-height: 28px;
   text-align: center;
   margin: 0;
-  text-transform: uppercase;
   margin-bottom: 30px;
+  text-transform: uppercase;
 }
 
 .adv-span {
@@ -240,17 +245,46 @@
   text-align: center;
 }
 
-.big-item {
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 400px 800px;
-  grid-template-rows: 384px;
-  justify-content: center;
+.image-big-item {
+  grid-area: img-big;
 }
 
 .item-blue {
   background-color: #83B3D3;
   color: #FFFFFF;
+}
+
+.item-home {
+  margin: 0 auto;
+  padding-top: 89px;
+  padding-bottom: 79px;
+  grid-area: item-home;
+}
+
+.svg-home {
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 24px;
+  margin-left: 163px;
+}
+
+.svg-food {
+  margin: -7px 163px 24px 163px;
+  display: block;
+}
+
+.item-small-title {
+  margin-bottom: 19px;
+  color: #000000;
+}
+
+.item-food {
+  grid-area: item-food;
+  background: #FFFFFF;
+}
+
+.item-souvenirs {
+  grid-area: item-souvenirs;
 }
 
 .search-section {
