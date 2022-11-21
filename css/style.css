@@ -329,7 +329,22 @@
 }
 
 .subscribe-section {
-  outline: auto;
+  background-image: url(/images/backgrounds/background-subscribe.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+  width: 1200px;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.subscribe-title {
+  color: #FFFFFF;
+}
+
+.subscribe-description {
+  color: #FFFFFF;
+  line-height: 26px;
 }
 
 .footer {
