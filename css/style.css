@@ -340,11 +340,33 @@
 
 .subscribe-title {
   color: #FFFFFF;
+  margin-bottom: 29px;
 }
 
 .subscribe-description {
   color: #FFFFFF;
   line-height: 26px;
+  margin-bottom: 56px;
+}
+
+.subscription-main-form {
+  display: grid;
+  grid-template-columns: 600px 200px;
+  grid-template-rows: 60px;
+  justify-content: center;
+  margin: 0 auto;
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
+.field-input {
+  margin: 0 auto;
+  border: none;
+  width: 559px;
+  height: 60px;
+  padding: 0 19px 0 22px;
+  background: #F2F2F2;
+  border-radius: 10px 0px 0px 10px;
 }
 
 .footer {
