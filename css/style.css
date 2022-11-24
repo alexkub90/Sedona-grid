@@ -43,6 +43,7 @@
   width: 1200px;
   min-height: 100vh;
   margin: 0 auto;
+  box-shadow: 0px 0px 15px rgb(0 0 0 / 20%);
 }
 
 .header {
@@ -375,7 +376,6 @@
 .footer {
   display: grid;
   grid-template-columns: 179px auto 187px;
-  outline: 1px dotted blue;
 }
 
 .social-list {
