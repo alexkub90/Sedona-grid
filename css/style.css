@@ -324,7 +324,7 @@
 }
 
 .search-description {
-  margin-bottom: 55px;
+  margin-bottom: 56px;
   line-height: 26px;
 }
 
@@ -346,7 +346,7 @@
 .subscribe-description {
   color: #FFFFFF;
   line-height: 26px;
-  margin-bottom: 56px;
+  margin-bottom: 46px;
 }
 
 .subscription-main-form {
@@ -360,6 +360,9 @@
 }
 
 .field-input {
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 26px;
   margin: 0 auto;
   border: none;
   width: 559px;
@@ -410,4 +413,13 @@
   padding-top: 9px;
   padding-bottom: 8px;
   margin-top: 14px;
+}
+
+.btn-submit {
+  display: block;
+  background: #83B3D3;
+  border-radius: 0px 10px 10px 0px;
+  border: none;
+  font-size: 20px;
+  line-height: 26px;
 }
