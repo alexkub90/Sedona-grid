@@ -53,7 +53,6 @@
 
 .main {
   display: grid;
-  /* grid-template-rows: auto 1535px 417px 411px; */
 }
 
 .navigation {
@@ -89,13 +88,22 @@
   color: #333333;
 }
 
-.nav-active::before {
+.link-index-page::before {
   position: absolute;
   content: "";
   top: 64px;
   background-color: #756257;
   height: 2px;
   width: 68px;
+}
+
+.link-hotels::before {
+  position: absolute;
+  content: "";
+  top: 64px;
+  background-color: #756257;
+  height: 2px;
+  width: 93px;
 }
 
 .additional-list {
