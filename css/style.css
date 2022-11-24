@@ -373,7 +373,49 @@
 }
 
 .footer {
+  display: grid;
+  grid-template-columns: 179px auto 187px;
   outline: 1px dotted blue;
+}
+
+.social-list {
+  height: max-content;
+  list-style: none;
+  display: grid;
+  margin-top: 47px;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: 18px;
+  padding-left: 72px;
+}
+
+.social-twitter {
+  margin-right: 29px;
+  margin-top: -2px;
+}
+
+.social-facebook {
+  margin-right: 30px;
+}
+
+.social-youtube {
+  margin-top: -1px;
+}
+
+.footer-phone {
+  text-decoration: none;
+  font-family: inherit;
+  font-size: 40px;
+  line-height: 40px;
+  color: #000000;
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-left: 0;
+  margin-left: 256px;
+}
+
+.footer-htmlacademy {
+  margin: 0;
+  margin-top: 42px;
 }
 
 .button {
