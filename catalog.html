@@ -139,7 +139,7 @@
           </fieldset>
 
           <fieldset class="filter-fieldset filter-type">
-            <legend class="fieldset-title">Тип жилья</legend>
+            <legend class="fieldset-title">Тип жилья:</legend>
             <ul class="type-list">
               <li class="type-item">
                 <label class="control">
@@ -196,11 +196,9 @@
       </div>
     </section>
 
-    <!-- Сортировка -->
-    <!-- Возможно придется переделать форму -->
     <section class="sorting">
       <h2 class="visually-hidden">Результаты поиска</h2>
-      <p class="sorting-result-title">Найдено гостиниц: 38</p>
+      <h3 class="sorting-title">Найдено гостиниц: 38</h3>
 
       <details class="sorting-form">
         <summary class="button-select">Сначала дешёвые</summary>
@@ -221,7 +219,6 @@
         </ul>
       </details>
 
-      <!-- Способ отображения результатов -->
       <ul class="mode-list">
         <li class="mode-item mode-item-active">
           <a class="mode-link">
@@ -239,11 +236,10 @@
           </a>
         </li>
       </ul>
+    </section>
 
-
-      <!-- Карточки гостиниц -->
+    <section class="catalog-hotels">
       <h3 class="visually-hidden">Список гостиниц</h3>
-
       <article class="hotel-card">
         <h4 class="hotel-card-title">
           <a class="hotel-card-link" href="#">
@@ -340,64 +336,65 @@
 
       <button class="button button-large" type="button">Загрузить еще</button>
 
-      <!-- Пагинация -->
-      <section class="pagination">
-        <h3 class="visually-hidden">Список страниц</h3>
-        <ul class="pagination-list">
-          <li class="pagination-item">
-            <a class="pagination-link link-current" href="#">1</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">2</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">3</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">4</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">...</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">10</a>
-          </li>
-        </ul>
-        <!-- Сколько показывать гостиниц в фильтре -->
-        <div class="shown-pieces">
-          <h3 class="visually-hidden">Сколько гостиниц показывать на странице</h3>
-          <p class="shown-pieces-title">Гостиниц на странице:</p>
-          <details class="select-shown-pieces">
-            <summary class="select-button">4</summary>
-
-            <ul class="select-menu">
-              <li class="select-item select-item-active">
-                <a class="select-option" href="#">5</a>
-              </li>
-              <li class="select-item">
-                <a class="select-option" href="#">6</a>
-              </li>
-              <li class="select-item">
-                <a class="select-option" href="#">9</a>
-              </li>
-              <li class="select-item">
-                <a class="select-option" href="#">12</a>
-              </li>
-            </ul>
-          </details>
-        </div>
-      </section>
     </section>
 
-    <!-- Блок подписки на рассылку -->
-    <section class="mailing-main-catalog">
-      <h2 class="mailing-main-title">Подпишитесь на рассылку</h2>
-      <p class="mailing-main-description">
-        Только полезная информация и никакого спама, честное бойскаутское!
-      </p>
-      <form class="mailing-main-form" action="https://echo.htmlacademy.ru/" method="post">
-        <input class="field-input" type="email" name="email" placeholder="Ваш e-mail">
-        <button class="button" type="submit">Подписаться</button>
+    <section class="pagination">
+      <h3 class="visually-hidden">Список страниц</h3>
+      <ul class="pagination-list">
+        <li class="pagination-item">
+          <a class="pagination-link link-current" href="#">1</a>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link" href="#">2</a>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link" href="#">3</a>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link" href="#">4</a>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link" href="#">...</a>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link" href="#">10</a>
+        </li>
+      </ul>
+      <!-- Сколько показывать гостиниц в фильтре -->
+      <div class="shown-pieces">
+        <h3 class="visually-hidden">Сколько гостиниц показывать на странице</h3>
+        <p class="shown-pieces-title">Гостиниц на странице:</p>
+        <details class="select-shown-pieces">
+          <summary class="select-button">4</summary>
+
+          <ul class="select-menu">
+            <li class="select-item select-item-active">
+              <a class="select-option" href="#">5</a>
+            </li>
+            <li class="select-item">
+              <a class="select-option" href="#">6</a>
+            </li>
+            <li class="select-item">
+              <a class="select-option" href="#">9</a>
+            </li>
+            <li class="select-item">
+              <a class="select-option" href="#">12</a>
+            </li>
+          </ul>
+        </details>
+      </div>
+    </section>
+
+    <section class="subscribe-section subscribe-catalog">
+      <h3 class="visually-hidden">Подписка</h3>
+      <h2 class="subscribe-title info-title">Подпишитесь на рассылку</h2>
+      <p class="subscribe-description info-description">Только полезная информация и никакого спама,<br>честное
+        бойскаутское!</p>
+      <form class="subscription-main-form" action="https://echo.htmlacademy.ru/" method="post">
+        <label class="subscription-main-field field">
+          <input class="field-input" type="email" name="email" placeholder="Ваш e-mail">
+        </label>
+        <button class="button button-large btn-submit" type="submit">Подписаться</button>
       </form>
     </section>
   </main>

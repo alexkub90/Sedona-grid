@@ -445,6 +445,157 @@
   margin-top: 42px;
 }
 
+.main-container {
+  display: grid;
+  grid-template-rows: 408px 48px 1040px 55px 241px;
+  grid-template-areas: "filter"
+    "sorting"
+    "catalog"
+    "pagination"
+    "subscribe";
+}
+
+.filter-section {
+  grid-area: filter;
+  background-image: url(/images/backgrounds/catalog-background-1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: -1px;
+  color: #FFFFFF;
+  padding: 34px 72px 83px 71px;
+}
+
+.filter-title {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+  margin: 0;
+}
+
+.breadcrumbs {
+  margin: 0;
+  margin-left: 2px;
+  margin-top: -10px;
+}
+
+.breadcrumbs-list {
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto;
+  list-style-type: none;
+  width: max-content;
+}
+
+.breadcrumbs-item:nth-child(1) {
+  margin-right: 11px;
+}
+
+.breadcrumbs-item:nth-child(2) {
+  margin-right: 10px;
+}
+
+.breadcrumbs-item:nth-child(3) a {
+  color: inherit;
+  font-size: 16px;
+  line-height: 20.7px;
+  text-decoration: none;
+}
+
+.filter-form {
+  display: grid;
+  grid-template-columns: repeat(4, max-content);
+  padding-top: 45px;
+}
+
+.filter-fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.fieldset-title {
+  padding: 0;
+  font-weight: 700;
+  line-height: 25.88px;
+  margin-bottom: 27px;
+}
+
+.filter-fieldset ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.filter-infrastructure {
+  padding-right: 67px;
+}
+
+.infrastructure {
+  position: relative;
+  display: block
+}
+
+.infrastructure-item:nth-child(1) {
+  margin-bottom: 10px;
+}
+
+.infrastructure-item:nth-child(2) {
+  margin-bottom: 10px;
+}
+
+.svg-checkbox {
+  position: absolute;
+  color: #FFFFFF;
+  top: 3px;
+  left: 1px;
+  width: 20px;
+  height: 20px;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+}
+
+.infrastructure-input[type="checkbox"]:checked+.svg-checkbox {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-image: url(/images/svg/checked.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  top: 3px;
+  left: 1px;
+}
+
+.checkbox-title {
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 23.29px;
+  padding-left: 40px;
+}
+
+.sorting {
+  display: grid;
+  grid-area: sorting;
+}
+
+.catalog-hotels {
+  display: grid;
+  grid-area: catalog;
+}
+
+.pagination {
+  display: grid;
+  grid-area: pagination;
+}
+
+.subscribe-section {
+  display: grid;
+  grid-area: subscribe;
+}
+
 .button {
   font-family: inherit;
   font-weight: 700;
