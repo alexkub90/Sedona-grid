@@ -51,9 +51,9 @@
   height: 66px;
 }
 
-.main {
+/* .main {
   display: grid;
-}
+} */
 
 .navigation {
   display: grid;
@@ -199,7 +199,7 @@
 .advantages-section {
   display: grid;
   grid-template-rows: repeat(4, 384px);
-  grid-template-columns: repeat(4, 400px);
+  grid-template-columns: repeat(3, 400px);
   grid-template-areas: "item-big img-big img-big"
     "item-home item-food item-souvenirs"
     "img-big-2 img-big-2 item-big-2"
@@ -607,6 +607,15 @@
 
 .type-item label:hover:before {
   filter: brightness(120%);
+}
+
+.filter-type {
+  margin-right: 167px;
+}
+
+.range-field {
+  border: 2px solid #FFFFFF;
+  border-radius: 4px;
 }
 
 
