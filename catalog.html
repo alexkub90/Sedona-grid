@@ -156,26 +156,25 @@
             </ul>
           </fieldset>
 
-          <fieldset class="filter-fieldset">
+          <fieldset class="filter-fieldset filter-cost">
             <legend class="fieldset-title">Стоимость, ₽:</legend>
-            <div class="range">
-              <label class="range-field">
-                <span class="range-title range-transparent">от</span>
-                <input class="range-input input-transparent" type="number" name="min-price" value="0" min="0"
-                  max="10000" step="100">
-              </label>
-
-              <label class="range-field">
-                <span class="range-title range-transparent">до</span>
-                <input class="range-input input-transparent" type="number" name="max-price" value="9000" min="0"
-                  max="10000" step="100">
-              </label>
+            <div class="range-container">
+              <div class="range-wrapper">
+                <label class="range-field range-from">
+                  <input class="range-input input-transparent" type="number" name="min-price" value="0" min="0"
+                    max="10000" step="100">
+                </label>
+                <label class="range-field range-before">
+                  <input class="range-input input-transparent" type="number" name="max-price" value="9000" min="0"
+                    max="10000" step="100">
+                </label>
+              </div>
 
               <div class="range-slider">
-                <button class="range-toggle toggle-min" type="button">
+                <button class="range-btn toggle-min" type="button">
                   <span class="visually-hidden">Изменить минимальную цену.</span>
                 </button>
-                <button class="range-toggle toggle-max" type="button">
+                <button class="range-btn toggle-max" type="button">
                   <span class="visually-hidden">Изменить максимальную цену.</span>
                 </button>
               </div>
