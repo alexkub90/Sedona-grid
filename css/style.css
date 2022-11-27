@@ -170,18 +170,19 @@
 
 .welcome-section {
   position: relative;
-  background-image: url("/images/backgrounds/index-background.jpg");
+  background-image: url(/images/backgrounds/index-background.jpg);
   background-position-y: -1px;
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 50px;
+  height: 434px;
 }
 
 .welcome-section::after {
   position: absolute;
   content: "";
-  bottom: 0;
-  background-image: url("/images/backgrounds/Vector.svg");
+  top: 427px;
+  background-image: url(/images/backgrounds/Vector.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
