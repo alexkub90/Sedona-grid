@@ -95,6 +95,7 @@
   background-color: #756257;
   height: 2px;
   width: 68px;
+  z-index: 1;
 }
 
 .link-hotels::before {
@@ -171,17 +172,16 @@
 .welcome-section {
   position: relative;
   background-image: url(/images/backgrounds/index-background.jpg);
-  background-position-y: -1px;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 50px;
+  padding-top: 51px;
   height: 434px;
 }
 
 .welcome-section::after {
   position: absolute;
   content: "";
-  top: 427px;
+  top: 428px;
   background-image: url(/images/backgrounds/Vector.svg);
   background-position: center;
   background-repeat: no-repeat;
