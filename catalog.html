@@ -193,38 +193,26 @@
       <h2 class="visually-hidden">Результаты поиска</h2>
       <h3 class="sorting-title">Найдено гостиниц: 38</h3>
 
-      <details class="sorting-form">
-        <summary class="button-select">Сначала дешёвые</summary>
-
-        <ul class="select-list">
-          <li class="select-item select-item-active">
-            <a class="select-option" href="#">Сначала дешёвые</a>
-          </li>
-          <li class="select-item">
-            <a class="select-option" href="#">Сначала дорогие</a>
-          </li>
-          <li class="select-item">
-            <a class="select-option" href="#">Сначала популярные</a>
-          </li>
-          <li class="select-item">
-            <a class="select-option" href="#">Сначала комфортные</a>
-          </li>
-        </ul>
-      </details>
+      <div class="sorting-container">
+        <select class="sorting-form" name="sorting" id="sorting-cost">
+          <option value="cheap">Сначала дешёвые</option>
+          <option value="expensive">Сначала дорогие</option>
+        </select>
+      </div>
 
       <ul class="mode-list">
         <li class="mode-item mode-item-active">
-          <a class="mode-link">
+          <a class="mode-link mode-cards" href="#">
             <span class="visually-hidden">Карточками</span>
           </a>
         </li>
         <li class="mode-item">
-          <a class="mode-link" href="#">
+          <a class="mode-link mode-slides" href="#">
             <span class="visually-hidden">Слайдами</span>
           </a>
         </li>
         <li class="mode-item">
-          <a class="mode-link" href="#">
+          <a class="mode-link mode-link-list" href="#">
             <span class="visually-hidden">Списком</span>
           </a>
         </li>
