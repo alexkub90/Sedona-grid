@@ -825,11 +825,6 @@
   margin-right: 72px;
 }
 
-.button-download {
-  grid-row: 3/4;
-  width: 620px;
-}
-
 .hotel-card {
   padding: 17px 20px 20px 20px;
   text-decoration: none;
@@ -1005,4 +1000,17 @@
 
 .btn-in-favourites {
   background-color: #7DB54F;
+}
+
+/* Закончить кнопку */
+.button-download {
+  grid-column: 1/-1;
+  width: 620px;
+  background-color: #83B3D3;
+  border: none;
+  border-radius: 4px;
+  margin-left: 290px;
+  font-size: 20px;
+  line-height: 26px;
+  text-transform: uppercase;
 }
