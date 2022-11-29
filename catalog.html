@@ -308,10 +308,11 @@
           <p class="hotel-rating">Рейтинг: 9,2</p>
         </div>
       </article>
-
-      <button class="button button-large button-download" type="button">Загрузить еще</button>
-
+      <div class="button-container">
+        <button class="button button-large button-download" type="button">Загрузить еще</button>
+      </div>
     </section>
+
 
     <section class="pagination">
       <h3 class="visually-hidden">Список страниц</h3>
@@ -335,35 +336,23 @@
           <a class="pagination-link" href="#">10</a>
         </li>
       </ul>
-      <!-- Сколько показывать гостиниц в фильтре -->
-      <div class="shown-pieces">
-        <h3 class="visually-hidden">Сколько гостиниц показывать на странице</h3>
-        <p class="shown-pieces-title">Гостиниц на странице:</p>
-        <details class="select-shown-pieces">
-          <summary class="select-button">4</summary>
 
-          <ul class="select-menu">
-            <li class="select-item select-item-active">
-              <a class="select-option" href="#">5</a>
-            </li>
-            <li class="select-item">
-              <a class="select-option" href="#">6</a>
-            </li>
-            <li class="select-item">
-              <a class="select-option" href="#">9</a>
-            </li>
-            <li class="select-item">
-              <a class="select-option" href="#">12</a>
-            </li>
-          </ul>
-        </details>
+      <div class="show-pieces">
+        <p class="shown-pieces-title">Гостиниц на странице:</p>
+        <select class="show-form" name="show-pieces" id="show-pieces">
+          <option value="four">4</option>
+          <option value="five">5</option>
+          <option value="six">6</option>
+          <option value="seven">7</option>
+        </select>
       </div>
     </section>
 
     <section class="subscribe-section subscribe-catalog">
       <h3 class="visually-hidden">Подписка</h3>
-      <h2 class="subscribe-title info-title">Подпишитесь на рассылку</h2>
-      <p class="subscribe-description info-description">Только полезная информация и никакого спама,<br>честное
+      <h2 class="subscribe-title info-title subscribe-catalog-title">Подпишитесь на рассылку</h2>
+      <p class="subscribe-description info-description subscribe-catalog-description">Только полезная информация и
+        никакого спама,<br>честное
         бойскаутское!</p>
       <form class="subscription-main-form" action="https://echo.htmlacademy.ru/" method="post">
         <label class="subscription-main-field field">
