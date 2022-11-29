@@ -433,14 +433,29 @@
   grid-template-columns: 179px auto 187px;
 }
 
+/* Разобраться с псевдоклассами в footer */
+
 .social-list {
   height: max-content;
   list-style: none;
   display: grid;
   margin-top: 47px;
-  grid-template-columns: repeat(3, auto);
-  grid-template-rows: 18px;
+  grid-template-columns: repeat(3, 20px);
+  column-gap: 30px;
+  grid-template-rows: 20px;
   padding-left: 72px;
+}
+
+.social-item a:hover {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  outline: auto;
+}
+
+.social-item svg {
+  padding: 0;
+  margin: 0;
 }
 
 .social-twitter {
