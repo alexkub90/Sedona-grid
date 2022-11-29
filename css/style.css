@@ -448,7 +448,7 @@
 
 .main-container {
   display: grid;
-  grid-template-rows: 409px auto 1040px auto auto;
+  grid-template-rows: 409px 145px 1040px 157px 252px;
   grid-template-areas: "filter"
     "sorting"
     "catalog"
@@ -739,7 +739,6 @@
   display: grid;
   grid-area: sorting;
   grid-template-columns: max-content max-content max-content;
-  margin-bottom: 56px;
 }
 
 .sorting-container {
@@ -823,6 +822,7 @@
   row-gap: 10px;
   margin-left: 72px;
   margin-right: 72px;
+  margin-top: 2px;
 }
 
 .hotel-card {
@@ -926,7 +926,7 @@
   grid-template-columns: repeat(6, 55px);
   list-style: none;
   column-gap: 8px;
-  padding-top: 27px;
+  padding-top: 29px;
   margin-right: 300px;
 }
 
@@ -965,7 +965,7 @@
 
 .shown-pieces-title {
   margin: 0;
-  margin-top: 42px;
+  margin-top: 44px;
   font-weight: 400;
   font-size: 18px;
   line-height: 23px;
@@ -978,7 +978,7 @@
   max-height: 48px;
   appearance: none;
   margin-left: 52px;
-  margin-top: 30px;
+  margin-top: 32px;
   margin-bottom: 4px;
   border: 2px solid #E6E6E6;
   border-radius: 4px;
@@ -991,8 +991,10 @@
 .subscribe-catalog {
   margin: 0;
   background: #FFFFFF;
-  padding-top: 73px;
-  padding-bottom: 141px;
+  padding: 0px;
+  grid-template-rows: repeat(3, min-content);
+  /* padding-top: 73px; */
+  /* padding-bottom: 141px; */
 }
 
 .subscribe-catalog h2 {
