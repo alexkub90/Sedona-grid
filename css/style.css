@@ -1055,6 +1055,18 @@
   line-height: 36px;
 }
 
+.search-btn:hover {
+  background: #615048;
+}
+
+.search-btn:focus {
+  outline: 3px solid #83B3D3;
+}
+
+.search-btn :active {
+  opacity: 0.3;
+}
+
 .additional-btn {
   align-self: flex-start;
   background: #756257;
@@ -1071,7 +1083,7 @@
 }
 
 .additional-btn:focus {
-  border: 3px solid #83B3D3;
+  outline: 3px solid #83B3D3;
 }
 
 .additional-btn:active {
