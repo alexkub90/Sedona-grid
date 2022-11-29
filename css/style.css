@@ -416,6 +416,18 @@
   border-radius: 10px 0px 0px 10px;
 }
 
+.field-input:hover {
+  background: #E6E6E6;
+}
+
+.field-input:focus {
+  outline: 3px solid #83B3D3;
+}
+
+.field-input:invalid {
+  outline: 2px solid #FF5757;
+}
+
 .footer {
   display: grid;
   grid-template-columns: 179px auto 187px;
