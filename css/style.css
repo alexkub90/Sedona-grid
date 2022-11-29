@@ -1075,7 +1075,7 @@
   outline: 3px solid #83B3D3;
 }
 
-.search-btn :active {
+.search-btn .button-span:active {
   opacity: 0.3;
 }
 
@@ -1109,6 +1109,18 @@
   border: none;
   font-size: 20px;
   line-height: 26px;
+}
+
+.btn-submit:hover {
+  background: #68A2CA;
+}
+
+.btn-submit:focus {
+  outline: 3px solid #756257;
+}
+
+.btn-submit .button-span:active {
+  opacity: 0.3;
 }
 
 .button-apply {
