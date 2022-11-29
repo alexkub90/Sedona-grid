@@ -975,6 +975,7 @@
 .show-form {
   padding-left: 15px;
   width: 160px;
+  max-height: 48px;
   appearance: none;
   margin-left: 52px;
   margin-top: 30px;
@@ -990,10 +991,17 @@
 .subscribe-catalog {
   margin: 0;
   background: #FFFFFF;
+  padding-top: 73px;
+  padding-bottom: 141px;
 }
 
 .subscribe-catalog h2 {
   color: #000000;
+  margin-bottom: 46px;
+}
+
+.subscribe-catalog p {
+  color: #333333;
 }
 
 .subscribe-section {
