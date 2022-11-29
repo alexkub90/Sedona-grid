@@ -88,6 +88,15 @@
   color: #333333;
 }
 
+.nav-link:hover {
+  color: #756257;
+}
+
+.nav-link:active {
+  color: #756257;
+  opacity: 0.3;
+}
+
 .link-index-page::before {
   position: absolute;
   content: "";
