@@ -490,24 +490,6 @@
   opacity: 0.3;
 }
 
-/* .social-item svg {
-  padding: 0;
-  margin: 0;
-} */
-
-/* .social-twitter {
-  margin-right: 29px;
-  margin-top: -2px;
-} */
-
-/* .social-facebook {
-  margin-right: 30px;
-} */
-
-/* .social-youtube {
-  margin-top: -1px;
-} */
-
 .footer-phone {
   text-decoration: none;
   font-family: inherit;
@@ -516,12 +498,10 @@
   color: #000000;
   margin: 0 auto;
   margin-top: 40px;
-  margin-left: 0;
-  margin-left: 256px;
 }
 
 .footer-htmlacademy {
-  margin: 0;
+  margin-left: 2px;
   margin-top: 42px;
 }
 
