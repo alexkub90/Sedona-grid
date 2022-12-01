@@ -430,7 +430,7 @@
 
 .footer {
   display: grid;
-  grid-template-columns: 190px 1fr 190px;
+  grid-template-columns: 190px 1fr 260px;
 }
 
 /* Разобраться с псевдоклассами в footer */
@@ -491,18 +491,58 @@
 }
 
 .footer-phone {
+  display: block;
+  padding: 15px;
+  height: max-content;
   text-decoration: none;
   font-family: inherit;
   font-size: 40px;
   line-height: 40px;
   color: #000000;
   margin: 0 auto;
-  margin-top: 40px;
+  margin-top: 25px;
+  margin-right: 161px;
+}
+
+.footer-phone:hover {
+  color: #756257;
+}
+
+.footer-phone:focus {
+  color: #756257;
+  outline: 3px solid #83B3D3;
+  border-radius: 10px;
+}
+
+.footer-phone:active {
+  opacity: 0.3;
 }
 
 .footer-htmlacademy {
-  margin-left: 2px;
-  margin-top: 42px;
+  display: block;
+  width: 160px;
+  height: 70px;
+  margin: 0 auto;
+  margin-top: 23px;
+  margin-left: 49px;
+}
+
+.htmlacademy-svg {
+  fill: #000000;
+  padding: 19px 23px;
+}
+
+.htmlacademy-svg:hover {
+  fill: #756257;
+}
+
+.footer-htmlacademy:focus {
+  outline: 3px solid #83B3D3;
+  border-radius: 10px;
+}
+
+.footer-htmlacademy:active {
+  opacity: 0.3;
 }
 
 .main-container {
