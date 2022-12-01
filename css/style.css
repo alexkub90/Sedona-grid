@@ -430,7 +430,7 @@
 
 .footer {
   display: grid;
-  grid-template-columns: 179px auto 187px;
+  grid-template-columns: 190px 1fr 190px;
 }
 
 /* Разобраться с псевдоклассами в footer */
@@ -439,37 +439,74 @@
   height: max-content;
   list-style: none;
   display: grid;
-  margin-top: 47px;
-  grid-template-columns: repeat(3, 20px);
-  column-gap: 30px;
-  grid-template-rows: 20px;
-  padding-left: 72px;
+  margin-top: 38px;
+  grid-template-columns: repeat(3, 40px);
+  column-gap: 4px;
+  grid-template-rows: 40px;
+  padding-left: 61px;
 }
 
-.social-item a:hover {
+.social-item {
+  width: 40px;
+  height: 40px;
+}
+
+.social-item a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  position: relative;
+}
+
+.link-twitter svg {
   position: absolute;
-  width: 20px;
-  height: 20px;
-  outline: auto;
+  top: 12px;
+  left: 11px;
 }
 
-.social-item svg {
+.link-facebook svg {
+  position: absolute;
+  top: 11px;
+  left: 14px;
+}
+
+.link-youtube svg {
+  position: absolute;
+  top: 12px;
+  left: 10px;
+}
+
+.social-item a:focus {
+  outline: 3px solid #83B3D3;
+  border-radius: 10px;
+}
+
+/* Шедевр! */
+.social-item>a>svg>g>path:hover {
+  fill: #68A2CA;
+}
+
+.social-item>a>svg>g>path:active {
+  opacity: 0.3;
+}
+
+/* .social-item svg {
   padding: 0;
   margin: 0;
-}
+} */
 
-.social-twitter {
+/* .social-twitter {
   margin-right: 29px;
   margin-top: -2px;
-}
+} */
 
-.social-facebook {
+/* .social-facebook {
   margin-right: 30px;
-}
+} */
 
-.social-youtube {
+/* .social-youtube {
   margin-top: -1px;
-}
+} */
 
 .footer-phone {
   text-decoration: none;
@@ -490,7 +527,7 @@
 
 .main-container {
   display: grid;
-  grid-template-rows: 409px 145px 1040px 157px 252px;
+  grid-template-rows: 409px 145px 1040px 157px 381px;
   grid-template-areas: "filter"
     "sorting"
     "catalog"
