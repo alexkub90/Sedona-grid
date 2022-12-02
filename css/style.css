@@ -906,6 +906,15 @@
   background-color: #FFFFFF;
 }
 
+.range-btn:focus {
+  border: 3px solid #83B3D3;
+  border-radius: 5px;
+}
+
+.range-btn:active {
+  border: 2px solid #83B3D3;
+}
+
 .range-btn {
   position: absolute;
   content: "";
