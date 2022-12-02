@@ -1025,44 +1025,46 @@
 }
 
 .mode-list li {
-  border: 2px solid #E6E6E6;
-  border-radius: 4px;
   position: relative;
 }
 
 .mode-link {
   display: block;
-  width: 48px;
-  height: 48px;
+  border: 2px solid #E6E6E6;
+  border-radius: 4px;
+  width: 44px;
+  height: 44px;
   position: relative;
-  top: -2px;
-  right: 2px;
 }
 
 .mode-cards {
-  background: url(/images/svg/mode-cards.svg) 16px 17px no-repeat;
+  background: url(/images/svg/mode-cards.svg) 14px 15px no-repeat;
 }
 
 .mode-slides {
-  background: url(/images/svg/mode-slideshow.svg) 16px 17px no-repeat;
+  background: url(/images/svg/mode-slideshow.svg) 14px 15px no-repeat;
 }
 
 .mode-link-list {
-  background: url(/images/svg/mode-list.svg) 16px 17px no-repeat;
+  background: url(/images/svg/mode-list.svg) 14px 15px no-repeat;
+}
+
+.mode-link:focus-visible {
+  outline: none;
 }
 
 .mode-link:focus {
-  outline: 2px solid #83B3D3;
+  border: 2px solid #83B3D3;
   border-radius: 4px;
 }
 
 .mode-link:hover {
-  outline: 2px solid #83B3D3;
+  border: 2px solid #83B3D3;
   border-radius: 4px;
 }
 
 .mode-link:active {
-  outline: 2px solid #000000;
+  border: 2px solid #000000;
   border-radius: 4px;
 }
 
