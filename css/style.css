@@ -625,7 +625,6 @@
 .breadcrumbs-hotels {
   display: block;
   position: relative;
-  /* top: 0px; */
   width: 89px;
   height: 27px;
 }
@@ -756,10 +755,6 @@
 .type-item:nth-child(2) {
   margin-bottom: 10px;
 }
-
-/* .type-item input[type=radio] {
-  display: none;
-} */
 
 .type-item label {
   position: relative;
@@ -1108,10 +1103,6 @@
   opacity: 0.6;
 }
 
-/* .hotel-card a:focus {
-  
-} */
-
 .hotel-card-title {
   margin: 0;
   margin-bottom: 16px;
@@ -1193,7 +1184,6 @@
   display: grid;
   grid-area: pagination;
   grid-template-columns: 1fr 1fr;
-  /* grid-template-rows: 55px; */
 }
 
 .pagination-list {
@@ -1271,8 +1261,6 @@
   background: #FFFFFF;
   padding: 0px;
   grid-template-rows: repeat(3, min-content);
-  /* padding-top: 73px; */
-  /* padding-bottom: 141px; */
 }
 
 .subscribe-catalog h2 {
