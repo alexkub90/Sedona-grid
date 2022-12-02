@@ -1100,13 +1100,17 @@
   opacity: 0.3;
 }
 
+.img-link:focus {
+  outline: 3px solid #83B3D3;
+}
+
 .hotel-card img:hover {
   opacity: 0.6;
 }
 
-.hotel-card a:focus {
-  outline: 3px solid #83B3D3;
-}
+/* .hotel-card a:focus {
+  
+} */
 
 .hotel-card-title {
   margin: 0;
@@ -1429,6 +1433,17 @@
   padding-bottom: 8px;
 }
 
+.button-detailed:focus {
+  outline: 3px solid #83B3D3;
+  border-radius: 4px;
+  background: #615048;
+}
+
+.button-detailed:hover {
+  background: #615048;
+}
+
+/* Добавить span в button-detailed и добавить псевдоклассы */
 .button-favourites {
   background-color: #83B3D3;
   border-radius: 4px;
@@ -1437,8 +1452,28 @@
   padding-top: 9px;
 }
 
+.button-favourites:focus {
+  outline: 3px solid #756257;
+  border-radius: 4px;
+  background: #68A2CA;
+}
+
+.btn-in-favourites:focus {
+  background: #6C9E42;
+}
+
+.button-favourites:not(.btn-in-favourites):hover {
+  outline: 1px solid #756257;
+  background: #68A2CA;
+  border-radius: 4px;
+}
+
 .btn-in-favourites {
   background-color: #7DB54F;
+}
+
+.btn-in-favourites:hover {
+  background: #6C9E42;
 }
 
 .button-download {
