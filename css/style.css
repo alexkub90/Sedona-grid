@@ -842,6 +842,30 @@
   opacity: 0.3;
 }
 
+.range-field input:hover {
+  border: 2px solid rgba(255, 255, 255, 0.6);
+}
+
+.range-from input:focus {
+  border: 2px solid #FFFFFF;
+  box-shadow: 0px 0px 0px 3px #81B3D2;
+  border-radius: 4px 0px 0px 4px;
+}
+
+.range-field input:focus-visible {
+  outline-color: #81B3D2;
+}
+
+.range-before input:focus {
+  border: 2px solid #FFFFFF;
+  box-shadow: 0px 0px 0px 3px #81B3D2;
+  border-radius: 0px 4px 4px 0px;
+}
+
+.range-field input:active {
+  background: #756257;
+}
+
 .range-before::after {
   position: absolute;
   right: 17px;
