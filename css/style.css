@@ -711,6 +711,23 @@
   border-radius: 4px;
 }
 
+.infrastructure-input[type="checkbox"]:hover+.svg-checkbox {
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 4px;
+}
+
+.infrastructure-input[type="checkbox"]:focus+.svg-checkbox {
+  background: rgba(255, 255, 255, 0.6);
+  outline: 3px solid #83B3D3;
+  border-radius: 4px;
+}
+
+.infrastructure-input[type="checkbox"]:active+.svg-checkbox {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  outline: none;
+}
+
 .infrastructure-input[type="checkbox"]:checked+.svg-checkbox {
   position: absolute;
   content: "";
@@ -722,6 +739,7 @@
   top: 3px;
   left: 1px;
 }
+
 
 .checkbox-title {
   font-family: inherit;
