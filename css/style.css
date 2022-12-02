@@ -562,7 +562,7 @@
   background-repeat: no-repeat;
   background-position-y: -1px;
   color: #FFFFFF;
-  padding: 35px 72px 83px 71px;
+  padding: 35px 72px 83px 66px;
 }
 
 .filter-title {
@@ -571,11 +571,14 @@
   font-size: 60px;
   line-height: 78px;
   margin: 0;
+  margin-left: 6px;
+}
+
+.filter-container {
+  padding-left: 5px;
 }
 
 .breadcrumbs {
-  margin: 0;
-  margin-left: 2px;
   margin-top: -10px;
 }
 
@@ -590,11 +593,13 @@
 }
 
 .breadcrumbs-item:nth-child(1) {
-  margin-right: 11px;
+  width: 28px;
+  height: 27px;
+  margin-right: 3px;
 }
 
 .breadcrumbs-item:nth-child(2) {
-  margin-right: 10px;
+  margin-right: 2px;
 }
 
 .breadcrumbs-item:nth-child(3) a {
@@ -602,6 +607,58 @@
   font-size: 16px;
   line-height: 20.7px;
   text-decoration: none;
+}
+
+.breadcrumbs-index {
+  display: block;
+  position: relative;
+  width: 28px;
+  height: 27px;
+}
+
+.breadcrumbs-index svg {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+}
+
+.breadcrumbs-hotels {
+  display: block;
+  position: relative;
+  /* top: 0px; */
+  width: 89px;
+  height: 27px;
+}
+
+.breadcrumbs-hotels span {
+  position: absolute;
+  top: 5px;
+  left: 8px;
+}
+
+.breadcrumbs-link:focus {
+  outline: 3px solid #83B3D3;
+  border-radius: 4px;
+}
+
+.breadcrumbs-link:active {
+  outline: none;
+  opacity: 0.3;
+}
+
+.breadcrumbs-item:not(:nth-child(2)):hover {
+  opacity: 0.6;
+}
+
+.breadcrumbs-item:nth-child(3) {
+  position: relative;
+  width: 89px;
+  height: 27px;
+}
+
+.breadcrumbs-item:nth-child(3):focus {
+  outline: 3px solid #83B3D3;
+  border-radius: 4px;
 }
 
 .filter-form {
@@ -855,7 +912,7 @@
   line-height: 39px;
   text-transform: uppercase;
   color: #000000;
-  margin-top: 47px;
+  margin-top: 48px;
   margin-left: 71px;
   margin-right: 192px;
   padding: 0;
@@ -865,7 +922,7 @@
   appearance: none;
   margin-top: 43px;
   padding-left: 17px;
-  padding-top: 9px;
+  padding-top: 10px;
   padding-bottom: 12px;
   border: 2px solid #E6E6E6;
   border-radius: 4px;
