@@ -1089,6 +1089,25 @@
   margin-bottom: 10px;
 }
 
+.img-link {
+  display: block;
+  width: 300px;
+  height: 206px;
+  margin-bottom: 16px;
+}
+
+.img-link:active {
+  opacity: 0.3;
+}
+
+.hotel-card img:hover {
+  opacity: 0.6;
+}
+
+.hotel-card a:focus {
+  outline: 3px solid #83B3D3;
+}
+
 .hotel-card-title {
   margin: 0;
   margin-bottom: 16px;
