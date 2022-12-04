@@ -1274,6 +1274,21 @@
   background: url(/images/svg/dropdown.svg) 125px 19px no-repeat;
 }
 
+.show-form:hover {
+  border: 2px solid #83B3D3;
+  border-radius: 4px;
+}
+
+.show-form:focus,
+.show-form:focus-visible {
+  outline: 2px solid #83B3D3;
+  border-radius: 4px;
+}
+
+.show-form:active {
+  opacity: 0.3;
+}
+
 .subscribe-catalog {
   margin: 0;
   background: #FFFFFF;
