@@ -1391,8 +1391,8 @@
   outline: 3px solid #756257;
 }
 
-.btn-submit .button-span:active {
-  opacity: 0.3;
+.btn-submit:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .button-apply {
@@ -1522,4 +1522,18 @@
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
+}
+
+.button-download:hover {
+  background: #68A2CA;
+}
+
+.button-download:focus {
+  outline: 3px solid #756257;
+}
+
+.button-download:active {
+  color: rgba(255, 255, 255, 0.3);
+  outline: none;
+  border: none;
 }
