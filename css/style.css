@@ -48,12 +48,7 @@
 
 .header {
   margin: 0;
-  height: 66px;
 }
-
-/* .main {
-  display: grid;
-} */
 
 .navigation {
   display: grid;
@@ -1211,15 +1206,38 @@
 
 .pagination-link {
   display: block;
-  font-weight: 700;
+  min-width: 55px;
+  min-height: 55px;
   font-size: 20px;
   line-height: 26px;
   text-align: center;
   text-transform: uppercase;
   color: #FFFFFF;
   text-decoration: none;
-  margin-left: 2px;
-  margin-top: 14px;
+  padding-top: 14px;
+  box-sizing: border-box;
+}
+
+.pagination-link:hover {
+  background: #68A2CA;
+  border-radius: 4px;
+}
+
+.pagination-link:focus {
+  background: #68A2CA;
+  outline: 3px solid #756257;
+  border-radius: 4px;
+}
+
+.pagination-link:active {
+  color: rgba(255, 255, 255, 0.3);
+  outline: none;
+  background: #68A2CA;
+  border-radius: 4px;
+}
+
+.pagination-link:focus-visible {
+  outline-offset: 0px;
 }
 
 .link-current {
@@ -1431,7 +1449,12 @@
   background: #615048;
 }
 
-/* Добавить span в button-detailed и добавить псевдоклассы */
+.button-detailed span:active {
+  outline: none;
+  border: none;
+  opacity: 0.3;
+}
+
 .button-favourites {
   background-color: #83B3D3;
   border-radius: 4px;
@@ -1456,12 +1479,22 @@
   border-radius: 4px;
 }
 
+.button-favourites:not(.btn-in-favourites) span:active {
+  opacity: 0.3;
+}
+
 .btn-in-favourites {
   background-color: #7DB54F;
 }
 
 .btn-in-favourites:hover {
+  outline: none;
+  border: none;
   background: #6C9E42;
+}
+
+.btn-in-favourites span:active {
+  opacity: 0.3;
 }
 
 .button-download {
