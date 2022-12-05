@@ -485,7 +485,7 @@
   opacity: 0.3;
 }
 
-.footer-phone {
+.footer a[href^="tel:"] {
   display: block;
   padding: 15px;
   height: max-content;
@@ -499,17 +499,17 @@
   margin-right: 161px;
 }
 
-.footer-phone:hover {
+.footer a[href^="tel:"]:hover {
   color: #756257;
 }
 
-.footer-phone:focus {
+.footer a[href^="tel:"]:focus {
   color: #756257;
   outline: 3px solid #83B3D3;
   border-radius: 10px;
 }
 
-.footer-phone:active {
+.footer a[href^="tel:"]:active {
   opacity: 0.3;
 }
 
