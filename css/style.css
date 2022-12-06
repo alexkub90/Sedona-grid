@@ -1344,8 +1344,10 @@
   outline: 3px solid #83B3D3;
 }
 
-.search-btn .button-span:active {
-  opacity: 0.3;
+.search-btn:active {
+  color: rgba(255, 255, 255, 0.3);
+  outline: none;
+  border: none;
 }
 
 .additional-btn {
