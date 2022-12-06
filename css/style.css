@@ -469,18 +469,19 @@
   left: 10px;
 }
 
-.social-item a:focus {
-  outline: 3px solid #83B3D3;
-  border-radius: 10px;
-}
-
-/* Шедевр! */
-.social-item>a>svg>g>path:hover {
+.social-item a:hover svg>g>path {
   fill: #68A2CA;
 }
 
-.social-item>a>svg>g>path:active {
+.social-item a:active svg>g>path {
   opacity: 0.3;
+  outline: none;
+  border: none;
+}
+
+.social-item a:focus {
+  outline: 3px solid #83B3D3;
+  border-radius: 10px;
 }
 
 .footer a[href^="tel:"] {
