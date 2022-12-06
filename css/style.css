@@ -134,6 +134,14 @@
   min-height: 42px;
 }
 
+.additional-menu-btn:hover svg>path {
+  fill: #756257;
+}
+
+.additional-menu-btn:active svg>path {
+  opacity: 0.3;
+}
+
 .svg-search {
   position: relative;
   top: 22px;
@@ -144,12 +152,6 @@
   position: relative;
   top: 21px;
   left: 11px;
-}
-
-.svg-search path:hover,
-.svg-like path:hover {
-  color: #756257;
-  fill: #756257;
 }
 
 .favourites-btn::after {
