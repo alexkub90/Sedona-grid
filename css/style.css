@@ -1376,6 +1376,39 @@
   margin: 0;
 }
 
+.search-form {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 40px;
+  color: #000000;
+}
+
+.modal-field input {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 40px;
+  color: #000000;
+}
+
+.arrival-field-message {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 40px;
+  color: #FF5757;
+}
+
+.departure-field-message {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 40px;
+  color: #333333;
+}
+
+.tooltip-text {
+  display: none;
+}
+
+
 .button {
   display: block;
   font-family: inherit;

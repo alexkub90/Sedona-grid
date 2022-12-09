@@ -290,13 +290,13 @@
         </p>
         </p>
         <p class="modal-field departure-date-field">
-          <label for="departure-date">Дата выезда:</label>
+          <label class="form-label" for="departure-date">Дата выезда:</label>
           <input type="text" name="departure-date" id="departure-date" placeholder="Укажите дату выезда."
             value="1 сентября 2021">
         <p class="departure-field-message">На эти даты есть свободные номера. Пока есть.</p>
         </p>
         <p class="modal-field adult-modal-field">
-          <label for="adult-input">Взрослые:</label>
+          <label class="form-label" for="adult-input">Взрослые:</label>
           <button class="modal-minus-btn">
             <span class="visually-hidden">Уменьшить количество взрослых</span>
             <svg width="13" height="1" viewBox="0 0 13 1" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -341,6 +341,7 @@
             </svg>
           </button>
           <!-- Добавить псевдоэлемент ::after с треугольником -->
+          <!-- Пока скроем  -->
           <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей,<br> которые
             будут с
             вами, возраст<br> которых от 6 до 18
