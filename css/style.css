@@ -1330,7 +1330,6 @@
 }
 
 .modal-search {
-  /* display: grid; */
   width: 715px;
 }
 
@@ -1398,30 +1397,12 @@
 
 .arrival-field-message {
   grid-column: 2/-1;
-}
-
-.departure-date-field {
-  grid-column: 1/-1;
-}
-
-.departure-field-message {
-  grid-column: 2/-1;
-}
-
-.age-field {
-  grid-column: 1/-1;
-}
-
-.modal-search-btn {
-  grid-column: 1/-1;
-}
-
-.modal-field input {
-  font-family: inherit;
-  font-weight: 700;
-  font-size: 18px;
+  position: relative;
+  bottom: 7px;
+  font-weight: 400;
+  font-size: 16px;
   line-height: 40px;
-  color: #000000;
+  color: #FF5757;
 }
 
 .arrival-date-field input {
@@ -1436,22 +1417,55 @@
   background-image: url(/images/svg/modal-calendar.svg);
   background-repeat: no-repeat;
   background-position: 386px 18px;
+  margin-bottom: 0px;
 }
 
+.departure-date-field {
+  grid-column: 1/-1;
+}
 
-
-.arrival-field-message {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 40px;
-  color: #FF5757;
+.departure-date-field input {
+  border: none;
+  box-sizing: border-box;
+  width: 420px;
+  height: 50px;
+  background: #F2F2F2;
+  border-radius: 4px;
+  margin-left: 45px;
+  padding-left: 19px;
+  background-image: url(/images/svg/modal-calendar.svg);
+  background-repeat: no-repeat;
+  background-position: 386px 18px;
 }
 
 .departure-field-message {
+  grid-column: 2/-1;
+  position: relative;
+  bottom: 7px;
   font-weight: 400;
   font-size: 16px;
   line-height: 40px;
   color: #333333;
+}
+
+.age-field {
+  grid-column: 1/-1;
+}
+
+.modal-minus-btn {
+  margin-left: 0;
+}
+
+.modal-search-btn {
+  grid-column: 1/-1;
+}
+
+.modal-field input {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 40px;
+  color: #000000;
 }
 
 .tooltip-text {
