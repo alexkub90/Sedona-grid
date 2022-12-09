@@ -295,79 +295,82 @@
             value="1 сентября 2021">
         <p class="departure-field-message">На эти даты есть свободные номера. Пока есть.</p>
         </p>
-        <p class="modal-field adult-modal-field">
-          <label class="form-label" for="adult-input">Взрослые:</label>
-          <button class="modal-minus-btn">
-            <span class="visually-hidden">Уменьшить количество взрослых</span>
-            <svg width="13" height="1" viewBox="0 0 13 1" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path opacity="0.3" d="M0 0L0 1L13 1V0L0 0Z" fill="black" />
-            </svg>
-          </button>
-          <input type="text" name="adult-input" id="adult-input" placeholder="Укажите количество взрослых." value="2">
-          <button class="modal-plus-btn">
-            <span class="visually-hidden">Увеличить количество взрослых</span>
-            <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <g opacity="0.3" clip-path="url(#clip0_18711_297)">
-                <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z" fill="black" />
-              </g>
-              <defs>
-                <clipPath id="clip0_18711_297">
-                  <rect width="13" height="13" fill="white" />
-                </clipPath>
-              </defs>
-            </svg>
-          </button>
-        </p>
-        <p class="modal-field child-modal-field">
-
-          <label for="child-input">Дети:</label>
-          <button class="modal-tooltip-btn" aria-labelledby="tooltip-label">
-            <span class="visually-hidden">Информация о детях</span>
-            <svg width="1" height="9" viewBox="0 0 1 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <g clip-path="url(#clip0_18711_288)">
-                <g clip-path="url(#clip1_18711_288)">
-                  <path d="M0 9H1L1 3H0L0 9Z" fill="white" />
-                  <path d="M1 0H0V1H1V0Z" fill="white" />
+        <div class="age-field">
+          <p class="modal-field adult-modal-field">
+            <label class="form-label" for="adult-input">Взрослые:</label>
+            <button class="modal-minus-btn">
+              <span class="visually-hidden">Уменьшить количество взрослых</span>
+              <svg width="13" height="1" viewBox="0 0 13 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path opacity="0.3" d="M0 0L0 1L13 1V0L0 0Z" fill="black" />
+              </svg>
+            </button>
+            <input type="text" name="adult-input" id="adult-input" placeholder="Укажите количество взрослых." value="2">
+            <button class="modal-plus-btn">
+              <span class="visually-hidden">Увеличить количество взрослых</span>
+              <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g opacity="0.3" clip-path="url(#clip0_18711_297)">
+                  <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z" fill="black" />
                 </g>
-              </g>
-              <defs>
-                <clipPath id="clip0_18711_288">
-                  <rect width="1" height="9" fill="white" />
-                </clipPath>
-                <clipPath id="clip1_18711_288">
-                  <rect width="1" height="9" fill="white" />
-                </clipPath>
-              </defs>
-            </svg>
-          </button>
-          <!-- Добавить псевдоэлемент ::after с треугольником -->
-          <!-- Пока скроем  -->
-          <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей,<br> которые
-            будут с
-            вами, возраст<br> которых от 6 до 18
-            лет. Дети<br> до 6 лет размещаются<br> бесплатно.
-          </span>
-          <button class="modal-minus-btn">
-            <span class="visually-hidden">Уменьшить количество взрослых</span>
-            <svg width="13" height="1" viewBox="0 0 13 1" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path opacity="0.3" d="M0 0L0 1L13 1V0L0 0Z" fill="black" />
-            </svg>
-          </button>
-          <input type="text" name="child-input" id="child-input" placeholder="Укажите количество детей" value="1">
-          <button class="modal-plus-btn">
-            <span class="visually-hidden">Увеличить количество взрослых</span>
-            <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <g opacity="0.3" clip-path="url(#clip0_18711_297)">
-                <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z" fill="black" />
-              </g>
-              <defs>
-                <clipPath id="clip0_18711_297">
-                  <rect width="13" height="13" fill="white" />
-                </clipPath>
-              </defs>
-            </svg>
-          </button>
-        </p>
+                <defs>
+                  <clipPath id="clip0_18711_297">
+                    <rect width="13" height="13" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </button>
+          </p>
+          <p class="modal-field child-modal-field">
+
+            <label for="child-input">Дети:</label>
+            <button class="modal-tooltip-btn" aria-labelledby="tooltip-label">
+              <span class="visually-hidden">Информация о детях</span>
+              <svg width="1" height="9" viewBox="0 0 1 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_18711_288)">
+                  <g clip-path="url(#clip1_18711_288)">
+                    <path d="M0 9H1L1 3H0L0 9Z" fill="white" />
+                    <path d="M1 0H0V1H1V0Z" fill="white" />
+                  </g>
+                </g>
+                <defs>
+                  <clipPath id="clip0_18711_288">
+                    <rect width="1" height="9" fill="white" />
+                  </clipPath>
+                  <clipPath id="clip1_18711_288">
+                    <rect width="1" height="9" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </button>
+            <!-- Добавить псевдоэлемент ::after с треугольником -->
+            <!-- Пока скроем  -->
+            <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей,<br> которые
+              будут с
+              вами, возраст<br> которых от 6 до 18
+              лет. Дети<br> до 6 лет размещаются<br> бесплатно.
+            </span>
+            <button class="modal-minus-btn">
+              <span class="visually-hidden">Уменьшить количество взрослых</span>
+              <svg width="13" height="1" viewBox="0 0 13 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path opacity="0.3" d="M0 0L0 1L13 1V0L0 0Z" fill="black" />
+              </svg>
+            </button>
+            <input type="text" name="child-input" id="child-input" placeholder="Укажите количество детей" value="1">
+            <button class="modal-plus-btn">
+              <span class="visually-hidden">Увеличить количество взрослых</span>
+              <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g opacity="0.3" clip-path="url(#clip0_18711_297)">
+                  <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z" fill="black" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_18711_297">
+                    <rect width="13" height="13" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </button>
+          </p>
+        </div>
+
         <button class="modal-search-btn">
           <span class="visually-hidden">Найти</span>
           Найти
