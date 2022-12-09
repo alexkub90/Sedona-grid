@@ -1330,7 +1330,8 @@
   border-radius: 30px;
 }
 
-.modal-auth {
+.modal-search {
+  display: grid;
   width: 715px;
 }
 
@@ -1364,10 +1365,6 @@
 .modal-close-btn:active svg {
   opacity: 0.3;
   outline: none;
-}
-
-.modal-content {
-  margin-left: 0;
 }
 
 .modal-title {
