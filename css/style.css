@@ -179,7 +179,7 @@
 
 .welcome-section {
   position: relative;
-  background-image: url(/images/backgrounds/index-background.jpg);
+  background-image: url("/images/backgrounds/index-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 51px;
@@ -190,7 +190,7 @@
   position: absolute;
   content: "";
   top: 428px;
-  background-image: url(/images/backgrounds/Vector.svg);
+  background-image: url("/images/backgrounds/Vector.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -366,7 +366,7 @@
 }
 
 .subscribe-section {
-  background-image: url(/images/backgrounds/background-subscribe.jpg);
+  background-image: url("/images/backgrounds/background-subscribe.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0 auto;
@@ -425,8 +425,6 @@
   display: grid;
   grid-template-columns: 190px 1fr 260px;
 }
-
-/* Разобраться с псевдоклассами в footer */
 
 .social-list {
   height: max-content;
@@ -551,7 +549,7 @@
 
 .filter-section {
   grid-area: filter;
-  background-image: url(/images/backgrounds/catalog-background-1.jpg);
+  background-image: url("/images/backgrounds/catalog-background-1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: -1px;
@@ -726,7 +724,7 @@
   content: "";
   width: 20px;
   height: 20px;
-  background-image: url(/images/svg/checked.svg);
+  background-image: url("/images/svg/checked.svg");
   background-repeat: no-repeat;
   background-position: center;
   top: 3px;
@@ -984,7 +982,7 @@
   font-size: 18px;
   line-height: 23px;
   color: #333333;
-  background: url(/images/svg/dropdown.svg) 252px 19px no-repeat;
+  background: url("/images/svg/dropdown.svg") 252px 19px no-repeat;
 }
 
 .sorting-form:hover {
@@ -1027,15 +1025,15 @@
 }
 
 .mode-cards {
-  background: url(/images/svg/mode-cards.svg) 14px 15px no-repeat;
+  background: url("/images/svg/mode-cards.svg") 14px 15px no-repeat;
 }
 
 .mode-slides {
-  background: url(/images/svg/mode-slideshow.svg) 14px 15px no-repeat;
+  background: url("/images/svg/mode-slideshow.svg") 14px 15px no-repeat;
 }
 
 .mode-link-list {
-  background: url(/images/svg/mode-list.svg) 14px 15px no-repeat;
+  background: url("/images/svg/mode-list.svg") 14px 15px no-repeat;
 }
 
 .mode-link:focus-visible {
@@ -1139,15 +1137,15 @@
 }
 
 .stars-2 {
-  background: url(/images/svg/stars-2.svg) 0px 10px no-repeat;
+  background: url("/images/svg/stars-2.svg") 0px 10px no-repeat;
 }
 
 .stars-3 {
-  background: url(/images/svg/stars-3.svg) 0px 10px no-repeat;
+  background: url("/images/svg/stars-3.svg") 0px 10px no-repeat;
 }
 
 .start-4 {
-  background: url(/images/svg/stars-4.svg) 0px 10px no-repeat;
+  background: url("/images/svg/stars-4.svg") 0px 10px no-repeat;
 }
 
 .hotel-rating {
@@ -1270,7 +1268,7 @@
   font-size: 18px;
   line-height: 23px;
   color: #333333;
-  background: url(/images/svg/dropdown.svg) 125px 19px no-repeat;
+  background: url("/images/svg/dropdown.svg") 125px 19px no-repeat;
 }
 
 .show-form:hover {
@@ -1419,7 +1417,7 @@
   border-radius: 4px;
   margin-left: 50px;
   padding-left: 19px;
-  background-image: url(/images/svg/modal-calendar.svg);
+  background-image: url("/images/svg/modal-calendar.svg");
   background-repeat: no-repeat;
   background-position: 386px 18px;
   margin-bottom: 0px;
@@ -1438,7 +1436,7 @@
   border-radius: 4px;
   margin-left: 45px;
   padding-left: 19px;
-  background-image: url(/images/svg/modal-calendar.svg);
+  background-image: url("/images/svg/modal-calendar.svg");
   background-repeat: no-repeat;
   background-position: 386px 18px;
 }
