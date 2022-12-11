@@ -1360,6 +1360,10 @@
   outline: 3px solid #83B3D3;
 }
 
+.modal-close-btn:active {
+  outline: none;
+}
+
 .modal-close-btn:active svg {
   opacity: 0.3;
   outline: none;
@@ -1493,9 +1497,37 @@
   border-radius: 4px;
 }
 
-.modal-minus-btn svg {
+.modal-minus-btn svg,
+.modal-plus-btn svg {
+  width: 25px;
+  height: 25px;
+  box-sizing: border-box;
+  padding: 6px;
   position: relative;
-  bottom: 6px;
+  top: 2px;
+}
+
+.modal-minus-btn svg>path,
+.modal-plus-btn svg>g>path {
+  fill: rgba(0, 0, 0, 0.5);
+}
+
+.modal-minus-btn:hover svg>path,
+.modal-plus-btn:hover svg>g>path {
+  fill: #000000;
+}
+
+.modal-minus-btn:focus svg,
+.modal-plus-btn:focus svg {
+  outline: 3px solid #83B3D3;
+  border-radius: 4px;
+}
+
+.modal-minus-btn:active svg>path,
+.modal-plus-btn:active svg>g>path {
+  fill: rgba(0, 0, 0, 0.3);
+  outline: none;
+  border: none;
 }
 
 .modal-plus-btn {
@@ -1515,6 +1547,10 @@
   margin-top: 14px;
 }
 
+.modal-tooltip-btn:hover {
+  background-color: #68A2CA;
+}
+
 .modal-search-btn {
   grid-column: 1/-1;
   font-family: inherit;
@@ -1530,6 +1566,20 @@
   border-radius: 10px;
   border: none;
   margin-top: 40px;
+  cursor: pointer;
+}
+
+.modal-search-btn:hover {
+  background: #68A2CA;
+}
+
+.modal-search-btn:focus {
+  background: #68A2CA;
+  outline: 3px solid #756257;
+}
+
+.modal-search-btn:active {
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .modal-field input {
@@ -1540,8 +1590,54 @@
   color: #000000;
 }
 
+.modal-field input:hover {
+  background-color: #E6E6E6;
+}
+
+.modal-field input:focus {
+  background-color: #E6E6E6;
+  outline: 3px solid #83B3D3;
+}
+
+.modal-field input:active {
+  outline: 2px solid #000000;
+}
+
 .tooltip-text {
+  position: absolute;
+  bottom: 22px;
+  right: 106px;
+  box-sizing: border-box;
+  background: #333333;
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  width: 256px;
+  height: 143px;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+  padding-left: 22px;
+  padding-top: 19px;
   display: none;
+}
+
+.tooltip-text:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 9.5px solid transparent;
+  border-right: 9.5px solid transparent;
+  border-bottom: 9px solid #333333;
+  position: absolute;
+  bottom: 100%;
+  right: 119px;
+}
+
+.modal-tooltip-btn:hover+.tooltip-text,
+.modal-tooltip-btn:focus+.tooltip-text {
+  display: block;
 }
 
 .button {
