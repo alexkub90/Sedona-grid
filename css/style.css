@@ -207,7 +207,7 @@
 
 .advantages-section {
   display: grid;
-  grid-template-rows: repeat(4, 384px);
+  grid-template-rows: repeat(4, auto);
   grid-template-columns: repeat(3, 400px);
   grid-template-areas: "item-big img-big img-big"
     "item-home item-food item-souvenirs"
@@ -247,11 +247,12 @@
 }
 
 .item-container {
-  padding-top: 98px;
-  padding-bottom: 87px;
+  /* padding-top: 98px; */
+  /* padding-bottom: 87px; */
   margin: 0;
   background: rgba(131, 179, 211, 0.12);
   width: 400px;
+  min-height: 384px;
 }
 
 .item-title {
@@ -260,6 +261,7 @@
   line-height: 28px;
   text-align: center;
   margin: 0;
+  margin-top: 98px;
   margin-bottom: 29px;
   text-transform: uppercase;
 }
@@ -284,6 +286,7 @@
 
 .image-big-item {
   grid-area: img-big;
+  max-height: 384px;
 }
 
 .item-blue {
@@ -293,8 +296,8 @@
 
 .item-home {
   margin: 0 auto;
-  padding-top: 89px;
-  padding-bottom: 79px;
+  /* padding-top: 89px; */
+  /* padding-bottom: 79px; */
   grid-area: item-home;
 }
 
@@ -305,33 +308,39 @@
 
 .item-souvenirs {
   grid-area: item-souvenirs;
-  padding-top: 85px;
+  /* padding-top: 85px; */
 }
 
 .svg-home {
   margin: 0 auto;
-  display: block;
+  margin-top: 89px;
   margin-bottom: 24px;
-  margin-left: 163px;
+  display: block;
 }
 
 .svg-food {
-  margin: -7px 163px 24px 163px;
+  margin: 0 auto;
+  margin-top: 91px;
+  margin-bottom: 24px;
   display: block;
 }
 
 .svg-souvenirs {
   display: block;
-  margin: 0px 168px 24px 168px;
+  margin: 0 auto;
+  margin-top: 85px;
+  margin-bottom: 24px;
 }
 
 .item-small-title {
+  margin-top: 0;
   margin-bottom: 19px;
   color: #000000;
 }
 
 .image-big-item-2 {
   grid-area: img-big-2;
+  max-height: 384px;
 }
 
 .big-item-2 {
