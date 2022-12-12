@@ -41,7 +41,7 @@
   display: grid;
   width: 1200px;
   min-height: 100vh;
-  grid-template-rows: 65px 1fr 120px;
+  grid-template-rows: 65px 1fr auto;
   margin: 0 auto;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
 }
@@ -386,7 +386,7 @@
   margin-bottom: 46px;
 }
 
-.subscription-main-form {
+/* .subscription-main-form {
   display: grid;
   grid-template-columns: 600px 200px;
   grid-template-rows: 60px;
@@ -394,6 +394,16 @@
   margin: 0 auto;
   padding-left: 200px;
   padding-right: 200px;
+} */
+
+.subscription-main-form {
+  display: grid;
+  grid-template-columns: 600px auto;
+  grid-template-rows: 60px;
+  justify-content: center;
+  /* margin: 0 auto; */
+  /* padding-left: 200px; */
+  /* padding-right: 200px; */
 }
 
 .field-input {
@@ -423,7 +433,8 @@
 
 .footer {
   display: grid;
-  grid-template-columns: 190px 1fr 260px;
+  grid-template-columns: 190px 1fr auto;
+  min-height: 120px;
 }
 
 .social-list {
@@ -484,16 +495,13 @@
 
 .footer a[href^="tel:"] {
   display: block;
-  padding: 15px;
-  height: max-content;
   text-decoration: none;
   font-family: inherit;
   font-size: 40px;
   line-height: 40px;
   color: #000000;
-  margin: 0 auto;
-  margin-top: 25px;
-  margin-right: 161px;
+  text-align: center;
+  padding-top: 40px;
 }
 
 .footer a[href^="tel:"]:hover {
@@ -512,16 +520,12 @@
 
 .footer-htmlacademy {
   display: block;
-  width: 160px;
-  height: 70px;
-  margin: 0 auto;
-  margin-top: 23px;
-  margin-left: 49px;
+  padding-top: 42px;
+  padding-right: 71px;
 }
 
 .htmlacademy-svg {
   fill: #000000;
-  padding: 19px 23px;
 }
 
 .htmlacademy-svg:hover {
@@ -1708,6 +1712,7 @@
   border-radius: 0px 10px 10px 0px;
   font-size: 20px;
   line-height: 26px;
+  min-width: 199px;
 }
 
 .btn-submit:hover {
