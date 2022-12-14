@@ -941,28 +941,21 @@
 .sorting {
   display: grid;
   grid-area: sorting;
-  grid-template-columns: max-content max-content max-content;
-}
-
-.sorting-container {
-  width: max-content;
-  height: max-content;
-  margin-right: 81px;
+  grid-template-columns: 600px 288px 1fr;
+  min-height: 145px;
 }
 
 .sorting-title {
-  height: max-content;
-  width: max-content;
+  min-width: 500px;
   margin: 0;
   font-weight: 700;
   font-size: 30px;
   line-height: 39px;
   text-transform: uppercase;
+  text-align: center;
   color: #000000;
-  margin-top: 48px;
-  margin-left: 71px;
-  margin-right: 192px;
-  padding: 0;
+  padding-top: 48px;
+  padding-left: 71px;
 }
 
 .sorting-form {
@@ -1000,9 +993,8 @@
   display: grid;
   grid-template-columns: repeat(3, 48px);
   grid-template-rows: 48px;
-  margin: 0;
   margin-top: 43px;
-  padding: 0;
+  padding-left: 80px;
   gap: 8px;
   list-style: none;
 }
