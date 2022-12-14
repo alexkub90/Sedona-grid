@@ -41,7 +41,7 @@
   display: grid;
   width: 1200px;
   min-height: 100vh;
-  grid-template-rows: 65px 1fr auto;
+  grid-template-rows: auto 1fr auto;
   margin: 0 auto;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
 }
@@ -52,7 +52,7 @@
 
 .navigation {
   display: grid;
-  height: 66px;
+  min-height: 65px;
   grid-template-columns: 209px 360px auto;
   margin: 0;
 }
@@ -69,7 +69,7 @@
   grid-column: 2/3;
   list-style: none;
   grid-template-columns: 68px 82px 93px;
-  height: 66px;
+  min-height: 65px;
   margin: 0;
   margin-left: 47px;
   align-items: center;
@@ -1704,10 +1704,10 @@
 .additional-btn {
   align-self: flex-start;
   background: #756257;
+  box-sizing: border-box;
   border-radius: 4px;
   min-width: 160px;
-  padding-top: 9px;
-  padding-bottom: 8px;
+  padding: 8px;
   margin-top: 14px;
 }
 
