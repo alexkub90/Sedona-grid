@@ -395,24 +395,11 @@
   margin-bottom: 46px;
 }
 
-/* .subscription-main-form {
-  display: grid;
-  grid-template-columns: 600px 200px;
-  grid-template-rows: 60px;
-  justify-content: center;
-  margin: 0 auto;
-  padding-left: 200px;
-  padding-right: 200px;
-} */
-
 .subscription-main-form {
   display: grid;
   grid-template-columns: 600px auto;
   grid-template-rows: 60px;
   justify-content: center;
-  /* margin: 0 auto; */
-  /* padding-left: 200px; */
-  /* padding-right: 200px; */
 }
 
 .field-input {
@@ -560,7 +547,8 @@
 
 .main-container {
   display: grid;
-  grid-template-rows: 409px 145px 1040px 157px 381px;
+  grid-template-rows: auto 145px 1040px 157px 381px;
+  grid-template-columns: 1200px;
   grid-template-areas: "filter"
     "sorting"
     "catalog"
@@ -570,12 +558,14 @@
 
 .filter-section {
   grid-area: filter;
-  background-image: url("/images/backgrounds/catalog-background-1.jpg");
+  box-sizing: border-box;
+  background-image: url(/images/backgrounds/catalog-background-1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: -1px;
   color: #FFFFFF;
-  padding: 35px 72px 83px 66px;
+  padding: 35px 65px;
+  min-height: 409px;
 }
 
 .filter-title {
@@ -584,7 +574,7 @@
   font-size: 60px;
   line-height: 78px;
   margin: 0;
-  margin-left: 6px;
+  padding-left: 6px;
 }
 
 .filter-container {
@@ -600,7 +590,6 @@
   margin: 0;
   display: grid;
   grid-template-columns: auto auto auto;
-  grid-template-rows: auto;
   list-style-type: none;
   width: max-content;
 }
@@ -616,9 +605,11 @@
 }
 
 .breadcrumbs-item:nth-child(3) a {
+  box-sizing: border-box;
+  padding: 3px 8px;
   color: inherit;
   font-size: 16px;
-  line-height: 20.7px;
+  line-height: 21px;
   text-decoration: none;
 }
 
@@ -638,14 +629,8 @@
 .breadcrumbs-hotels {
   display: block;
   position: relative;
-  width: 89px;
-  height: 27px;
-}
-
-.breadcrumbs-hotels span {
-  position: absolute;
-  top: 5px;
-  left: 8px;
+  min-width: 89px;
+  min-height: 27px;
 }
 
 .breadcrumbs-link:focus {
@@ -662,12 +647,6 @@
   opacity: 0.6;
 }
 
-.breadcrumbs-item:nth-child(3) {
-  position: relative;
-  width: 89px;
-  height: 27px;
-}
-
 .breadcrumbs-item:nth-child(3):focus {
   outline: 3px solid #83B3D3;
   border-radius: 4px;
@@ -675,7 +654,7 @@
 
 .filter-form {
   display: grid;
-  grid-template-columns: repeat(4, max-content);
+  grid-template-columns: repeat(4, auto);
   padding-top: 44px;
 }
 
@@ -688,7 +667,7 @@
 .fieldset-title {
   padding: 0;
   font-weight: 700;
-  line-height: 25.88px;
+  line-height: 26px;
   margin-bottom: 27px;
 }
 
@@ -699,7 +678,7 @@
 }
 
 .filter-infrastructure {
-  padding-right: 67px;
+  padding-right: 58px;
 }
 
 .infrastructure {
@@ -811,7 +790,7 @@
 }
 
 .filter-type {
-  margin-right: 167px;
+  padding-right: 158px;
 }
 
 .range-wrapper {
@@ -829,7 +808,7 @@
 }
 
 .filter-cost {
-  margin-right: 81px;
+  padding-right: 70px;
 }
 
 .filter-cost legend {
@@ -952,15 +931,11 @@
 
 .toggle-max {
   bottom: -8px;
-  right: 52px;
+  right: 61px;
 }
 
 .filter-buttons {
-  display: grid;
-  grid-template-columns: 160px;
-  grid-template-rows: 48px 48px;
   margin-top: 60px;
-  gap: 15px;
 }
 
 .sorting {
@@ -1746,6 +1721,10 @@
 }
 
 .button-apply {
+  box-sizing: border-box;
+  width: 160px;
+  min-height: 48px;
+  margin-bottom: 15px;
   background: #83B3D3;
   border-radius: 4px;
   font-size: 16px;
