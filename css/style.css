@@ -547,7 +547,7 @@
 
 .main-container {
   display: grid;
-  grid-template-rows: auto auto auto 157px 381px;
+  grid-template-rows: auto auto auto auto 381px;
   grid-template-columns: 1200px;
   grid-template-areas: "filter"
     "sorting"
@@ -1047,7 +1047,8 @@
   grid-template-columns: repeat(3, 340px);
   column-gap: 18px;
   row-gap: 14px;
-  padding: 2px 72px 30px 72px;
+  padding: 2px 72px 0 72px;
+  margin-bottom: 59px;
 }
 
 .hotel-card {
@@ -1157,24 +1158,21 @@
 .pagination {
   display: grid;
   grid-area: pagination;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 2fr;
+  margin-bottom: 44px;
+  margin-left: 68px;
 }
 
 .pagination-list {
   margin: 0;
-  margin-left: 72px;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(6, 55px);
+  grid-template-columns: repeat(6, auto);
   list-style: none;
   column-gap: 8px;
-  padding-top: 29px;
-  margin-right: 300px;
 }
 
 .pagination-item {
-  width: 55px;
-  height: 55px;
   background: #83B3D3;
   border-radius: 4px;
 }
@@ -1225,12 +1223,13 @@
 
 .show-pieces {
   display: grid;
-  grid-template-columns: max-content max-content;
+  grid-template-columns: 471px 1fr;
 }
 
 .shown-pieces-title {
   margin: 0;
-  margin-top: 44px;
+  padding-top: 15px;
+  text-align: end;
   font-weight: 400;
   font-size: 18px;
   line-height: 23px;
@@ -1239,12 +1238,11 @@
 
 .show-form {
   padding-left: 15px;
-  width: 160px;
-  max-height: 48px;
-  appearance: none;
   margin-left: 52px;
-  margin-top: 32px;
-  margin-bottom: 4px;
+  margin-top: 3px;
+  width: 160px;
+  height: 48px;
+  appearance: none;
   border: 2px solid #E6E6E6;
   border-radius: 4px;
   font-size: 18px;
