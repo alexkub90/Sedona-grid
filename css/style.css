@@ -247,8 +247,6 @@
 }
 
 .item-container {
-  /* padding-top: 98px; */
-  /* padding-bottom: 87px; */
   margin: 0;
   background: rgba(131, 179, 211, 0.12);
   width: 400px;
@@ -296,8 +294,6 @@
 
 .item-home {
   margin: 0 auto;
-  /* padding-top: 89px; */
-  /* padding-bottom: 79px; */
   grid-area: item-home;
 }
 
@@ -308,7 +304,6 @@
 
 .item-souvenirs {
   grid-area: item-souvenirs;
-  /* padding-top: 85px; */
 }
 
 .svg-home {
@@ -1159,7 +1154,7 @@
   display: grid;
   grid-area: pagination;
   grid-template-columns: 1fr 2fr;
-  margin-bottom: 44px;
+  margin-bottom: 73px;
   margin-left: 68px;
 }
 
