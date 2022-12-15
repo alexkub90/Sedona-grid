@@ -547,7 +547,7 @@
 
 .main-container {
   display: grid;
-  grid-template-rows: auto 145px 1040px 157px 381px;
+  grid-template-rows: auto auto auto 157px 381px;
   grid-template-columns: 1200px;
   grid-template-areas: "filter"
     "sorting"
@@ -952,10 +952,8 @@
   font-size: 30px;
   line-height: 39px;
   text-transform: uppercase;
-  text-align: center;
   color: #000000;
-  padding-top: 48px;
-  padding-left: 71px;
+  padding: 48px 71px;
 }
 
 .sorting-form {
@@ -1047,12 +1045,9 @@
   display: grid;
   grid-area: catalog;
   grid-template-columns: repeat(3, 340px);
-  grid-template-rows: 438px 438px auto;
   column-gap: 18px;
-  row-gap: 10px;
-  margin-left: 72px;
-  margin-right: 72px;
-  margin-top: 2px;
+  row-gap: 14px;
+  padding: 2px 72px 30px 72px;
 }
 
 .hotel-card {
@@ -1151,13 +1146,12 @@
 }
 
 .button-container {
-  margin-top: 21px;
   grid-row: 3/4;
   width: 1055px;
   max-height: 90px;
   border-top: 1px solid #E6E6E6;
   border-bottom: 1px solid #E6E6E6;
-  padding-top: 29px;
+  padding-top: 48px;
 }
 
 .pagination {
