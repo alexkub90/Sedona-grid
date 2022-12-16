@@ -179,6 +179,7 @@
 
 .welcome-section {
   position: relative;
+  background-color: #83B3D3;
   background-image: url("/images/backgrounds/index-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -215,6 +216,12 @@
     "item-3 item-4 item-5";
   margin: 0 auto;
   width: 1200px;
+}
+
+.advantages-img {
+  background-color: #83B3D3;
+  height: 100%;
+  object-fit: contain;
 }
 
 .info-container {
@@ -285,6 +292,7 @@
 .image-big-item {
   grid-area: img-big;
   max-height: 384px;
+  background-color: #83B3D3;
 }
 
 .item-blue {
@@ -336,6 +344,7 @@
 .image-big-item-2 {
   grid-area: img-big-2;
   max-height: 384px;
+  background-color: #83B3D3;
 }
 
 .big-item-2 {
@@ -370,6 +379,7 @@
 }
 
 .subscribe-section {
+  background-color: #83B3D3;
   background-image: url("/images/backgrounds/background-subscribe.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -554,6 +564,7 @@
 .filter-section {
   grid-area: filter;
   box-sizing: border-box;
+  background-color: #83B3D3;
   background-image: url(/images/backgrounds/catalog-background-1.jpg);
   background-size: cover;
   background-repeat: no-repeat;

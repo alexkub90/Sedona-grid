@@ -10,13 +10,13 @@
   <title>Город Седона</title>
 </head>
 
-<!-- Сделать критерий ALLY-02. Подписи интерактивных элементов. -->
 <!-- ALLY-05. Фоновый цвет у фоновых картинок. -->
 
 <body class="page">
   <header class="header">
     <nav class="navigation">
       <a class="logo-header" href="index.html">
+        <span class="visually-hidden">index.html</span>
         <img src="/images/svg/logo.svg" width="139" height="70" alt="Логотип города Седона">
       </a>
 
@@ -56,7 +56,10 @@
           </a>
         </li>
         <li class="menu-btn">
-          <a class="additional-btn button-brown button" href="#">Хочу сюда!</a>
+          <a class="additional-btn button-brown button" href="#">
+            <span class="visually-hidden">Хочу сюда</span>
+            Хочу сюда!
+          </a>
         </li>
       </ul>
     </nav>
@@ -81,7 +84,8 @@
           жизнь </p>
       </div>
       <div class="image-big-item">
-        <img src="/images/advantages/photo-1.jpg" width="800" height="384" alt="Фото заведений города Седона">
+        <img class="advantages-img" src="/images/advantages/photo-1.jpg" width="800" height="384"
+          alt="Фото заведений города Седона">
       </div>
       <div class="item-container item-home">
         <svg class="svg-home" width="75" height="72" viewBox="0 0 75 72" fill="none" xmlns="http://www.w3.org/2000/svg"
@@ -166,7 +170,8 @@
           но и настоящего местного<br> производства!</p>
       </div>
       <div class="image-big-item-2">
-        <img src="/images/advantages/photo-2.jpg" width="800" height="384" alt="Фото моста дьявола города Седона">
+        <img class="advantages-img" src="/images/advantages/photo-2.jpg" width="800" height="384"
+          alt="Фото моста дьявола города Седона">
       </div>
       <div class="item-container big-item-2 item-blue">
         <h3 class="item-title title-big-item">Там есть<br>
@@ -200,7 +205,10 @@
       <p class="search-description info-description">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие
         предложения гостиниц в Седоне
       </p>
-      <a class="search-btn button-brown button" href="#">ПОИСК ГОСТИНИЦЫ В седоне</a>
+      <a class="search-btn button-brown button" href="#">
+        <span class="visually-hidden">Поиск гостиницы в Седоне</span>
+        ПОИСК ГОСТИНИЦЫ В седоне
+      </a>
     </section>
     <section class="subscribe-section">
       <h3 class="visually-hidden">Подписка</h3>
@@ -211,8 +219,10 @@
         <label class="subscription-main-field field">
           <input class="field-input" type="email" name="email" placeholder="Ваш e-mail">
         </label>
-        <button class="button button-large btn-submit" type="submit"><span
-            class="button-span">Подписаться</span></button>
+        <button class="button button-large btn-submit" type="submit">
+          <span class="visually-hidden">Подписаться</span>
+          <spanclass="button-span">Подписаться</span>
+        </button>
       </form>
     </section>
   </main>
@@ -220,6 +230,7 @@
     <ul class="social-list">
       <li class="social-item social-twitter">
         <a class="link-twitter" href="https://twitter.com/htmlacademy_ru">
+          <span class="visually-hidden">Twitter htmlacademy</span>
           <svg width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg" role="img"
             aria-label="twitter">
             <g clip-path="url(#clip0_24196_690)">
@@ -237,6 +248,7 @@
       </li>
       <li class="social-item social-facebook">
         <a class="link-facebook" href="https://www.facebook.com/htmlacademy">
+          <span class="visually-hidden">facebook htmlacademy</span>
           <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg" role="img"
             aria-label="facebook">
             <g clip-path="url(#clip0_24196_688)">
@@ -252,6 +264,7 @@
       </li>
       <li class="social-item social-youtube">
         <a class="link-youtube" href="https://www.youtube.com/c/HTMLAcademyRUS">
+          <span class="visually-hidden">youtube htmlacademy</span>
           <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg" role="img"
             aria-label="youtube">
             <g clip-path="url(#clip0_24196_686)">
@@ -268,8 +281,12 @@
         </a>
       </li>
     </ul>
-    <a class="footer-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+    <a class="footer-phone" href="tel:+78128121212">
+      <span class="visually-hidden">tel:+78128121212</span>
+      +7 (812) 812-12-12
+    </a>
     <a class="footer-htmlacademy" href="https://up.htmlacademy.ru/">
+      <span class="visually-hidden">htmlacademy.ru</span>
       <svg class="htmlacademy-svg" aria-hidden="true" width="115" height="33" viewBox="0 0 115 33" fill="none"
         xmlns="http://www.w3.org/2000/svg" role="img" aria-label="htmlacademy">
         <path
