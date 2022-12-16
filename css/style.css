@@ -232,6 +232,8 @@
 }
 
 .info-title {
+  font-weight: 700;
+  font-size: 30px;
   line-height: 36px;
   margin: 0 auto;
   margin-bottom: 31px;
