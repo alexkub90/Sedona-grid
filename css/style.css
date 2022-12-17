@@ -382,7 +382,7 @@
 
 .subscribe-section {
   background-color: #83B3D3;
-  background-image: url("images/backgrounds/background-subscribe.jpg");
+  background-image: url("../images/backgrounds/background-subscribe.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0 auto;
@@ -567,7 +567,7 @@
   grid-area: filter;
   box-sizing: border-box;
   background-color: #83B3D3;
-  background-image: url(images/backgrounds/catalog-background-1.jpg);
+  background-image: url(../images/backgrounds/catalog-background-1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: -1px;
@@ -732,7 +732,7 @@
   content: "";
   width: 20px;
   height: 20px;
-  background-image: url("images/svg/checked.svg");
+  background-image: url("../images/svg/checked.svg");
   background-repeat: no-repeat;
   background-position: center;
   top: 3px;
@@ -1405,7 +1405,7 @@
   border-radius: 4px;
   margin-left: 50px;
   padding-left: 19px;
-  background-image: url("images/svg/modal-calendar.svg");
+  background-image: url("../images/svg/modal-calendar.svg");
   background-repeat: no-repeat;
   background-position: 386px 18px;
   margin-bottom: 0px;
@@ -1424,7 +1424,7 @@
   border-radius: 4px;
   margin-left: 45px;
   padding-left: 19px;
-  background-image: url("images/svg/modal-calendar.svg");
+  background-image: url("../images/svg/modal-calendar.svg");
   background-repeat: no-repeat;
   background-position: 386px 18px;
 }
