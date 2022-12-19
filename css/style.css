@@ -1056,12 +1056,16 @@
   column-gap: 18px;
   row-gap: 14px;
   padding: 2px 72px 0 72px;
-  margin-bottom: 59px;
+  margin-bottom: 29px;
 }
 
 .hotel-card {
   padding: 17px 20px 20px 20px;
   text-decoration: none;
+}
+
+.hotel-card:nth-of-type(4) {
+  margin-bottom: 20px;
 }
 
 .hotel-card img {
@@ -1160,7 +1164,8 @@
   max-height: 90px;
   border-top: 1px solid #E6E6E6;
   border-bottom: 1px solid #E6E6E6;
-  padding-top: 48px;
+  padding-top: 29px;
+  padding-bottom: 30px;
 }
 
 .pagination {
